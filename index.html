@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lipunmyynti</title>
+  </head>
+  <body>
+    <h1>Lipunmyynti</h1>
+
+    <div class="login" id="kirjautuminen">
+    </div>
+
+    <div hidden class="logout" id="uloskirjautuminen">
+    </div>
+
+    <div class="grid-container">
+      <div hidden class="grid-item" id="tapahtumavalikko">
+        <div class="select">
+          <h2>Valitse tapahtuma</h2>
+          <select hidden id="tapahtumat">
+            <option>Valitse</option>
+          </select>
+        </div>
+      </div>
+
+      <div hidden class="grid-item" id="tilausvalikko">
+        <h2>Valitse liput</h2>
+        <div id="tapahtumatiedot"></div>
+        <div id="lipputyypit"></div>
+      </div>
+    </div>
+
+    <div id="liput" class="liput-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
